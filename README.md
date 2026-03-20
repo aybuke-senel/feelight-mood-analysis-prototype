@@ -49,6 +49,7 @@ The project includes full software engineering documentation:
 - [Database Design (ERD)](diagrams/feelight_database_erd.png)
 
 [View all diagrams](./diagrams/)
+
 [VPD files](./vpd/) 
 
 -----
