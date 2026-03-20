@@ -42,11 +42,14 @@ This promotes personal awareness and emotional tracking.
 
 ## System Design
 The project includes full software engineering documentation:
-- Use Case Diagram
-- Class Diagram
-- Sequence Diagram
-- Activity Diagram
-- Database Design (ERD)
+- [Use Case Diagram](diagrams/feelight_usecase.png)
+- [Class Diagram](diagrams/feelight_class.png)
+- [Sequence Diagram](diagrams/feelight_sequence.png)
+- [Activity Diagram](diagrams/feelight_activity.png)
+- [Database Design (ERD)](diagrams/feelight_database_erd.png)
+
+[View all diagrams](./diagrams/)
+[VPD files](./vpd/) 
 
 -----
 
