@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #f7f0ea;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelFeelight">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>321</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 75 62pt &quot;Helvetica&quot;;
+    color: #ffffff;
+    font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>FEELIGHT</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelMood">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>330</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 75 24pt &quot;Helvetica&quot;;
+    color: #ffffff;
+    
+}</string>
+    </property>
+    <property name="text">
+     <string>Mood Through Words</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSoru">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>380</y>
+      <width>251</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: 75 18pt &quot;Helvetica&quot;;
+    color: #8b6b5c;
+    font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>  How are you feeling today?</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioHappy">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>430</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+    font-size: 16pt &quot;Georgia&quot;;
+    color: #ff95ca;
+}</string>
+    </property>
+    <property name="text">
+     <string>Happy</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioSad">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>450</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+    font-size: 16pt &quot;Georgia&quot;;
+    color: #8daaff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Sad</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioAngry">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>470</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+    font-size: 16pt &quot;Georgia&quot;;
+    color: #ff5c39;
+}</string>
+    </property>
+    <property name="text">
+     <string>Angry</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioCalm">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>490</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+    font-size: 16pt &quot;Georgia&quot;;
+    color: #ffa064;
+}</string>
+    </property>
+    <property name="text">
+     <string>Calm</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioAnxious">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>510</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QRadioButton {
+    font-size: 16pt &quot;Georgia&quot;;
+    color: #a66aff;
+}</string>
+    </property>
+    <property name="text">
+     <string>Anxious</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="okButton">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>590</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #ffe4f2;
+    color: #d63384;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #ffd1ea;
+}</string>
+    </property>
+    <property name="text">
+     <string>ok</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="settingsButton">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton {
+    background-color: #f8e8ff;
+    color: #6a0dad;
+    border-radius: 10px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+QToolButton:hover {
+    background-color: #eed6ff;
+}
+
+QWidget {
+    background-color: #fff6f9;
+    border-radius: 15px;
+    padding: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Settings</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1440</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
