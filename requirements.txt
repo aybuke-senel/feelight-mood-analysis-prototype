@@ -1,0 +1,25 @@
+altgraph==0.17.5
+contourpy==1.3.2
+cycler==0.12.1
+fonttools==4.62.1
+kiwisolver==1.5.0
+macholib==1.16.4
+matplotlib==3.10.8
+numpy==2.2.6
+packaging @ file:///opt/miniconda3/conda-bld/packaging_1761049079158/work
+pillow==12.1.1
+psycopg2-binary==2.9.11
+pygame==2.6.1
+pyinstaller==6.19.0
+pyinstaller-hooks-contrib==2026.3
+pyparsing==3.3.2
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.18
+PyQt5_sip==12.18.0
+PyQt6==6.10.2
+PyQt6_sip @ file:///Users/ec2-user/croot/pyqt-split_1772477380675/work/pyqt_sip
+python-dateutil==2.9.0.post0
+python-dotenv==1.2.2
+sip @ file:///Users/ec2-user/croot/sip_1770807533776/work
+six==1.17.0
+tomli @ file:///Users/ec2-user/croot/tomli_1768297479919/work
