@@ -1,176 +1,129 @@
 # Feelight – Emotion-Aware Mood Tracking Desktop App
 
-Feelight is an emotion-aware desktop application that transforms user feelings into a multi-sensory experience using color, music, and data visualization.
+Feelight is an **emotion-aware desktop application** that converts human emotions into a real-time, **multi-sensory experience** using **color, music, and data**.
 
-It provides real-time emotional feedback and tracks mood history to help users better understand their emotional patterns.
-
----
-
-## Project Purpose
-
-The goal of Feelight is to transform user emotions into a multi-sensory experience.
-
-Users can:
-
-- Select or express how they feel  
-- Receive instant visual feedback through color  
-- Get personalized motivational quotes  
-- Listen to mood-based music  
-- Store their mood history  
-- Analyze emotional trends over time  
-
-This promotes self-awareness and emotional tracking.
+It bridges emotional awareness with interactive technology, helping users understand and engage with their feelings in a more immersive way.
 
 ---
 
-## Key Features
+## Preview
 
-- Emotion selection & detection system  
-- Dynamic color-based UI (emotion-driven backgrounds)  
-- Personalized motivational quotes (database-based)  
-- Mood-based music recommendation & playback  
-- Mood history storage (PostgreSQL)  
-- Mood analytics & visualization (Matplotlib)  
-- Dark mode toggle  
-- Interactive settings menu  
-- Pause / Resume music control  
-
----
-
-## Screenshots
-
-### Mood Selection
+### Mood Selection  
 ![Mood Selection](images/feelight_main_screen.png)
 
-### Mood Result
+### Mood Result  
 ![Mood Result](images/feelight_second_screen.png)
 
-### Mood Analytics
+### Mood Analytics  
 ![Mood Analytics](images/feelight_mood_patterns.png)
 
 ---
 
-## System Architecture
+## Features
 
-The system consists of:
-
-- Frontend: PyQt5 GUI (multi-screen navigation)  
-- Backend: PostgreSQL database  
-- Logic Layer: Python (emotion handling, randomization, state management)  
-- Visualization: Matplotlib  
-- Media Engine: Pygame (music playback)  
-
----
-
-## System Design
-The project includes full software engineering documentation:
-- [Use Case Diagram](diagrams/feelight_usecase.png)
-- [Class Diagram](diagrams/feelight_class.png)
-- [Sequence Diagram](diagrams/feelight_sequence.png)
-- [Activity Diagram](diagrams/feelight_activity.png)
-- [Database Design (ERD)](diagrams/feelight_database_erd.png)
-
-[View all diagrams](./diagrams/)
-
-[VPD files](./vpd/) 
-
------
-
-## Database Structure
-
-### Tables:
-
-moods
-- id  
-- mood  
-- timestamp  
-
-quotes
-- id  
-- mood  
-- text  
-
-music
-- id  
-- mood  
-- title  
-- file_path  
-
----
-
-## Data & Visualization
-
-Feelight analyzes stored mood data and generates:
-
-- Mood frequency distribution  
-- Emotional trend insights  
-
-All visualized using bar charts via Matplotlib.
-
----
-
-## Application Flow
-
-1. User selects their current mood  
-2. System transitions to result screen  
-3. Emotion is displayed with:
-   - Matching background color  
-   - Motivational quote  
-   - Suggested music  
-4. User can:
-   - Save mood to database  
-   - View mood patterns  
-   - Toggle dark mode  
-   - Control music playback  
+- Emotion selection system  
+- Dynamic color-based UI  
+- Motivational quotes (database-driven)  
+- Mood-based music playback (pause/resume)  
+- Mood saving to PostgreSQL database  
+- Mood analytics visualization (Matplotlib)  
+- Dark mode toggle  
+- Settings menu  
 
 ---
 
 ## Tech Stack
 
 - Python  
-- PyQt5  
-- PostgreSQL (psycopg2)  
-- Matplotlib  
-- Pygame  
+- SQL (database design & queries)  
+- PostgreSQL  
+- PyQt5 (UI framework)  
+- Qt Designer (.ui files)  
+- Matplotlib (data visualization)  
+- Pygame (audio engine)  
+- python-dotenv (environment management)  
 
 ---
 
 ## How to Run
 
-Install required libraries:
+### 1. Install dependencies
+
+Install required packages using the [requirements.txt](./requirements.txt) or via terminal:
 
 ```bash
-pip install pyqt5 matplotlib psycopg2 pygame
+pip install -r requirements.txt
+```
+---
+
+### 2. Setup database
+
+Install PostgreSQL and create the database:
+
+```sql
+CREATE DATABASE feelight;
 ```
 
-Run the application:
+---
+
+### 3. Initialize database
+
+Use the [initialization script](./init.sql)
+
+---
+
+### 4. Setup environment
+
+Create a [.env file](./.env.example) 
+
+---
+
+### 5. Run the application
+
+Run the app using the [main script](./main.py) or via terminal:
 
 ```bash
 python main.py
 ```
----
-
-## Project Highlights
-
-- Combines UI, database, and multimedia into one system  
-- Real-time emotion-based feedback loop  
-- Persistent mood tracking with analytics  
-- User-centered emotional awareness design  
 
 ---
 
-## Note
+## Important Notes
 
-Make sure to configure your PostgreSQL credentials before running the project.
+- `.env` file is required but not included  
+- UI files must be in the same directory as `main.py`  
+- Database must be initialized before running the app  
 
 ---
 
-## Future Improvements
+## Project Structure
 
-- NLP-based emotion detection from free text  
-- Mobile application version  
-- User authentication system  
-- Advanced analytics (weekly/monthly trends)  
-- Cloud database integration  
+- [Main Application](./main.py) 
+- [Database Setup](./init.sql) 
+- [Dependencies](./requirements.txt)  
+- [Environment template](./.env.example)  
+- [Mood selection screen](/ui_files/first_screen.ui)
+- [Result screen](/ui_files/second_screen.ui)
+- [Screenshots](./images/)
+- [Diagrams](./diagrams/) 
+
+---
+
+## Architecture
+
+- **Frontend:** PyQt5 (.ui files)  
+- **Backend:** PostgreSQL  
+- **Logic Layer:** Python  
+- **Visualization:** Matplotlib  
+- **Audio Engine:** Pygame  
+
+---
+
+## Highlights
+
+- Clean separation of UI and logic  
+- Fully database-driven system  
+- Multi-sensory UX (color + sound + text)  
+- Real-time emotional feedback loop  
 
 
